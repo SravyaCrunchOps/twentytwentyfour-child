@@ -1,0 +1,48 @@
+/*
+Theme Name: Twenty Twenty-Four Child
+Template: twentytwentyfour
+Author: sravya veeravalli
+Description: Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.5.
+*/
+
+.simpletoc-title {
+    font-weight: 700 !important;
+    font-size: large;
+    margin-bottom: 0;
+}
+.simpletoc-list {
+    list-style: none !important;
+    text-align: left;
+    padding: 0;
+    text-align: justify;
+}
+.simpletoc-list li a {
+    text-decoration: none !important;
+    font-size: 16px;
+}
+.simpletoc-list li a:hover {
+    color: blueviolet;
+}
+.simpletoc-list li ul {
+    padding: 0 5px;
+    list-style: none;
+    text-align: left;
+}
+.simpletoc-list li ul li ul li::before {
+    content: '-';
+    padding-right: 5px;
+}
+
+.tags a {
+    border-radius: 20px !important;
+    background-color: rgb(236, 236, 255) !important;
+    border: 1px solid transparent !important;
+}
+
+.cat-item a, .wp-block-latest-posts__list li a {
+    text-decoration: none;
+}
+
+h2.wp-block-post-title {
+    width: 200px !important;
+}

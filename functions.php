@@ -5,7 +5,10 @@ add_action('wp_enqueue_scripts', 'enqueue_child_styles');
 function enqueue_child_styles() {
     wp_enqueue_style("parent-css", get_template_directory_uri()."/style.css");
     wp_enqueue_style("child-css", get_stylesheet_directory_uri()."/style.css", array());
-    wp_enqueue_style('blog-style', get_stylesheet_directory_uri()."./styles/blog-style.css");
+    wp_enqueue_style("blog-style", get_stylesheet_directory_uri() ."./styles/blog-style.css", array());
+    wp_enqueue_style("course-style", get_stylesheet_directory_uri()."./styles/course-style.css", array());
+    wp_enqueue_style("course-list-style", get_stylesheet_directory_uri()."./styles/course-list-style.css", array());
+
 }
 
 function register_menus() {
@@ -21,9 +24,13 @@ function register_menus() {
 
 add_action('init', 'register_menus');
 
+
+
 function custom_excerpt_length($length) {
     return 20;
 }
+
+
 
 add_filter('excerpt_length', 'custom_excerpt_length');
 

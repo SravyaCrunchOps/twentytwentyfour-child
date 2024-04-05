@@ -79,8 +79,9 @@
     text-transform: capitalize;
 }
 
-.entry-content {
+.entry-content p {
     color: rgba(83, 82, 82, 0.8);
+    width: 100%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 886px) {

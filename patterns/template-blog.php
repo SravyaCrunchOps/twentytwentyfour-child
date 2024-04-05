@@ -27,7 +27,7 @@
                     // Instantiate custom query
                     $custom_query = new WP_Query($args);
 
-                    // Output custom query loop
+                    // Output custom query loophave_posts
                     if ($custom_query->have_posts()) :
                         while ($custom_query->have_posts()) : $custom_query->the_post();
                         ?>
